@@ -1,0 +1,61 @@
+<html>
+<head>
+  <style>
+  .animes{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+  }
+  .back{
+    background-image: url("naruto.jpg");
+    background-color: orange;
+
+  }
+  @keyframes example{
+    from {background-color: red;}
+    to {background-color:yellow;}
+  }
+  .animes2{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example2;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes example2{
+    0% {background-color: red;}
+    25% {background-color:yellow;}
+    50% {background-color: blue;}
+    100%{background-color: green;}
+  }
+  .animes4{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example4;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes example4{
+    0% {background-color: red; left: 0px; top: 0px;}
+    25% {background-color:yellow; left: 200px; top: 0px;}
+    50% {background-color: blue; left: 200px; top: 200px;}
+    75% {background-color: green; left: 0px; top: 200px;}
+    100%{background-color: red; left: 0px; top: 0px;}
+  }
+  </style>
+</head>
+<body>
+  <p>The first animation is as follows</p>
+  <div class="animes"></div>
+  <p>The second animation is as follows</p>
+  <div class="animes2"></div>
+  <p>The third animation is as follows</p>
+  <div class="animes4"></div>
+  <div class="back">kjnnsnjnjcjcdjcd</div>
+</body>
+</html>
