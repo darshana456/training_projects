@@ -1,0 +1,156 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="form-validation.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+  <script src="form-validation.js"></script>
+</head>
+<body>
+  <div class="container wrapper">
+    <div class="header-content">
+      <h1> Required Form </h1>
+    </div>
+    <form name="registration">
+      <div class="section">
+        <div class="form-group row single-form-element">
+          <label for="imputImage" class="col-sm-4 col-form-label for-label">Your Image<sup class="superscript">*</sup>:</label>
+          <div class="col-sm-8">
+            <input type="file" class="form-control-file" name="file" id="inputFile" onchange="readURL(this);">
+          </div>
+        </div>
+        <div class="form-group row single-form-element">
+          <label for="preview" class="col-sm-4 col-form-label for-label">Image Preview:</label>
+          <div class="col-sm-8">
+            <img id="image-preview" src="#" alt="your image"/>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="form-group row single-form-element">
+          <label for="imputName" class="col-sm-4 col-form-label for-label">Name<sup class="superscript">*</sup>:</label>
+          <div class="col-sm-8">
+            <input type="text" class="form-control-plaintext input" name="name" id="inputName" placeholder="Name">
+            <span id="error-name"></span>
+          </div>
+        </div>
+        <div class="form-group row single-form-element">
+          <label for="inputGender" class="col-sm-4 col-form-label for-label">Gender<sup class="superscript">*</sup>:</label>
+          <div class="col-sm-8">
+            <span class="form-check form-check-inline">
+              <label class="form-check-label" for="inlineRadio1">Male</label>
+              <input class="form-check-input" type="radio" name="gender" id="inlineRadio1" value="Male"></input>
+              <label class="form-check-label" for="inlineRadio2">Female</label>
+              <input class="form-check-input" type="radio" name="gender" id="inlineRadio2" value="Female">
+            </span>
+          </div>
+        </div>
+        <div class="form-group row single-form-element">
+          <label for="age" class="col-sm-4 col-form-label for-label">Age<sup class="superscript">*</sup>:</label>
+          <div class="col-sm-8">
+            <input type="hidden" value="3" class="form-control-plaintext input" name="age" id="age" placeholder="Age" min="18" and max="30">
+          </div>
+        </div>
+        <div class="form-group row single-form-element">
+          <label for="birthdate" class="col-sm-4 col-form-label for-label">Date of Birth<sup class="superscript">*</sup>:</label>
+          <div class="col-sm-8">
+            <input type="date" name="date" class="form-control-plaintext input" id="dob">
+          </div>
+        </div>
+        <div class="form-group row single-form-element">
+          <label for="color" class="col-sm-4 col-form-label for-label">Favourite Color<sup class="superscript">*</sup>:</label>
+          <div class="col-sm-8">
+            <input type="color" name="color" class="form-control-plaintext input" id="fav-color">
+          </div>
+        </div>
+        <div class="form-group row single-form-element">
+          <label for="country" class="col-sm-4 col-form-label for-label">Which Country<sup class="superscript">*</sup>:</label>
+          <div class="col-sm-8 input">
+            <select name="country">
+              <option value="">Select Country</option>
+              <option>India</option>
+              <option>Pakistan</option>
+              <option>Afghanistan</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="form-group row single-form-element">
+          <label for="imputHeight" class="col-sm-4 col-form-label for-label">Height:</label>
+          <div class="col-sm-8">
+            <div class="row">
+              <div class="col-sm-2 for-height-salary">
+                <span>Short</span>
+              </div>
+              <div class="col-sm-4">
+                <input type="range" id="slider" min="400" max="500" steps="10">
+              </div>
+              <div class="col-sm-2 for-height-salary">
+                <span>Tall</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row single-form-element">
+          <label for="imputSalary" class="col-sm-4 col-form-label for-label">Salary:</label>
+          <div class="col-sm-8">
+            <div class="row">
+              <div class="col-sm-2 for-height-salary">
+                <span>Poor</span>
+              </div>
+              <div class="col-sm-4">
+                <input type="range" id="slider" min="400" max="500" steps="10">
+              </div>
+              <div class="col-sm-2 for-height-salary">
+                <span>Rich</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="form-group row single-form-element">
+          <label for="email" class="col-sm-4 col-form-label for-label">Email ID<sup class="superscript">*</sup>:</label>
+          <div class="col-sm-8">
+            <input type="email" class="form-control-plaintext input" name="email" id="email-id">
+          </div>
+        </div>
+        <div class="form-group row single-form-element">
+          <label for="mobile" class="col-sm-4 col-form-label for-label">Mobile<sup class="superscript">*</sup>:</label>
+          <div class="col-sm-8">
+            <input type="number" class="form-control-plaintext input" name="mobile" id="mobile-no">
+          </div>
+        </div>
+        <div class="form-group row single-form-element">
+          <label for="address" class="col-sm-4 col-form-label for-label">Address:<sup class="superscript">*</sup>:</label>
+          <div class="col-sm-8">
+            <textarea rows="4" cols="50" class="form-control-plaintext input" name="address" id="address"></textarea>
+          </div>
+        </div>
+        <div class="form-group row single-form-element">
+          <label for="address" class="col-sm-4 col-form-label for-label">Method to contact you:<sup class="superscript">*</sup>:</label>
+          <div class="col-sm-8">
+            <label class="checkbox-inline">
+              <input name="check" type="checkbox" id="inlineCheckbox1" value="Email"> Email
+            </label>
+            <label class="checkbox-inline">
+              <input name="check" type="checkbox" id="inlineCheckbox2" value="Whatsapp"> Whatsapp
+            </label>
+            <label class="checkbox-inline">
+              <input name="check" type="checkbox" id="inlineCheckbox3" value="In-app chat"> In-app chat
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="contain-submit">
+        <button type="submit" class="submit">Register</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

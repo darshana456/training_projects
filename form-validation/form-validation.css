@@ -1,0 +1,45 @@
+.wrapper {
+  width: 80%;
+  border: 5px solid #7E685A;
+  font-family: segoe;
+  font-size: 17px; }
+  .wrapper .header-content {
+    text-align: center;
+    border-bottom: 2px solid #7E685A; }
+  .wrapper .section {
+    margin-top: 8px;
+    border: 8px solid #7E685A;
+    background-color: #C2B9B0; }
+  .wrapper .for-label {
+    text-align: right; }
+  .wrapper .single-form-element {
+    padding-top: 12px; }
+  .wrapper .input {
+    font-size: 13px;
+    width: 42%; }
+  .wrapper .input[type=color] {
+    width: 60px; }
+  .wrapper .for-height-salary {
+    border: 1px solid #7E685A;
+    background-color: #7E685A;
+    margin-left: 14px;
+    width: 60px; }
+  .wrapper .superscript {
+    color: #B22222; }
+  .wrapper .error {
+    font-size: 15px;
+    font-weight: lighter;
+    color: #B22222;
+    display: block; }
+  .wrapper .contain-submit {
+    text-align: center; }
+  .wrapper .submit {
+    background-color: #7E685A;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 20px;
+    margin-top: 12px;
+    border-radius: 5px;
+    width: 40%; }
+
+/*# sourceMappingURL=form-validation.css.map */

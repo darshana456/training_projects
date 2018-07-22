@@ -1,0 +1,55 @@
+.wrapper {
+  width:80%;
+  border: 5px solid #7E685A;
+  font-family: segoe;
+  font-size: 17px;
+  .header-content {
+    text-align: center;
+    border-bottom: 2px solid #7E685A;
+  }
+  .section {
+    margin-top: 8px;
+    border: 8px solid #7E685A;
+    background-color: #C2B9B0;
+  }
+  .for-label {
+    text-align: right;
+  }
+  .single-form-element {
+    padding-top: 12px;
+  }
+  .input {
+    font-size: 13px;
+    width: 42%;
+  }
+  .input[type=color] {
+    width:60px;
+  }
+  .for-height-salary {
+    border: 1px solid #7E685A;
+    background-color: #7E685A;
+    margin-left: 14px;
+    width: 60px;
+  }
+  .superscript {
+    color: #B22222;
+  }
+  .error {
+    font-size: 15px;
+    font-weight: lighter;
+    color: #B22222;
+    display: block;
+  }
+  .contain-submit {
+    text-align: center;
+  }
+  .submit {
+    background-color: #7E685A;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 20px;
+    margin-top: 12px;
+    border-radius: 5px;
+    width:40%;
+  }
+}
