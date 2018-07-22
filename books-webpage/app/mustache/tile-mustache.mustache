@@ -1,0 +1,18 @@
+{{#Books}}
+<div class="col-xs-6 col-sm-4 col-md-3 book-tile" id="book-template">
+  <div class="book-tile-sub">
+    <img class="book-image img-responsive" src={{Image}}>
+    </img>
+    <div class="book-tile-content">
+      <div class="book-title">{{Title}}
+      </div>
+      <div class="book-description">{{Description}}</div>
+      <div class="row favs">
+      </div>
+      <div class='details-div'>
+        <button data-info= {{ID}} data-toggle='modal' data-target='#myModal' class='show-details'>Details</button>
+      </div>
+    </div>
+    </div>
+  </div>
+{{/Books}}
