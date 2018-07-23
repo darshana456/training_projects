@@ -1,0 +1,34 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="/libs/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/books.css">
+  <script src="/libs/jquery/dist/jquery.min.js"></script>
+  <script src="/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/libs/mustache/mustache.js"></script>
+  <script src="/js/books.js"></script>
+  <script src="/js/common-component.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="header-content">
+      <h1>Welcome To The World of Books</h1>
+    </div>
+    <div class="row books-content">
+      <div class="col-xs-4 col-sm-2 books-list">
+      </div>
+      <div class="loading">
+        <img src='loading.gif' width="120" height="100" />
+      </div>
+      <div class="col-xs-8 col-xs-offset-4 col-sm-10 col-sm-offset-2  books-details">
+      </div>
+      <div class="col-sm-offset-2 col-sm-10 pagination-container"></div>
+    </div>
+    <div class="modal fade" id="myModal" role="dialog">
+    </div>
+  </div>
+
+</body>
+</html>
