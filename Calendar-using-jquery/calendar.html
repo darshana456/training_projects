@@ -1,0 +1,43 @@
+<html>
+<head>
+  <title>Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="calendar-new.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="calendar.js"></script>
+</head>
+<body>
+  <div class="content">
+    <div class="header">
+      <button id="previous" class="previous"> < </button>
+      <div class="middle">
+          <span>
+            <select id="month-select" class="month-select" onchange="calendar(false, false, true)">
+            </select>
+          </span>
+          <span>
+            <select id="year-select" class="year-select" onchange="calendar(false, false, true)">
+              <option id="year" value="2018">
+            </select>
+          </span>
+      </div>
+      <button id="next" class="next"> > </button>
+    </div>
+    <div class="div-calendar">
+      <div class="div-calendar-row">
+        <div class="div-calendar-col week">Sun</div>
+        <div class="div-calendar-col week">Mon</div>
+        <div class="div-calendar-col week">Tue</div>
+        <div class="div-calendar-col week">Wed</div>
+        <div class="div-calendar-col week">Thu</div>
+        <div class="div-calendar-col week">Fri</div>
+        <div class="div-calendar-col week">Sat</div>
+      </div>
+      <div id="calendar-body" class="calendar-body">
+      </div>
+    </div>
+  </div>
+  <div class="div-calendar-col"></div>
+</body>
+</html>

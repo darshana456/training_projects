@@ -1,0 +1,290 @@
+.content{
+  border: 2px solid;
+  border-color: #000000;
+  margin-left: 8px;
+  margin-right: 20px;
+  color: #ffffff;
+  background-image: url("new.jpg");
+  width: 88%;
+  background-size: 100% 100%;
+
+  .header {
+    margin: 20px;
+    height: 40px;
+
+    .middle {
+      display: inline-block;
+      text-align: center;
+      width: 88%;
+
+      .month-select {
+        background-color: #000000;
+        color: #ffffff;
+        font-size: 25px;
+      }
+
+      .year-select {
+        background-color: #000000;
+        color: #ffffff;
+        font-size: 25px;
+      }
+    }
+
+    .previous {
+      float: left;
+      font-size: 30px;
+    }
+
+    .next {
+      float: right;
+      font-size: 30px;
+    }
+  }
+  .div-calendar {
+    border: 1px solid #666666;
+    border-spacing: 5px;
+    display: table;
+    font-size: 25px;
+    width: auto;
+
+    .week {
+      margin: 2px;
+      padding: 28px;
+    }
+
+    .div-calendar-row {
+      display: table-row;
+      width: auto;
+      clear: both;
+
+      .div-calendar-col {
+        float: left; /* fix for  buggy browsers */
+        width: 8%;
+        padding: 30px;
+        text-align: center;
+      }
+    }
+
+    .calendar-body {
+      .current-day {
+        color: #ffffff;
+        border: 2px solid #00CED1;
+      }
+
+      .birth-day {
+        color: #00FF00;
+        padding: 30px;
+        text-align: center;
+        margin: 2px;
+      }
+
+      .regular-day {
+        margin: 2px;
+      }
+
+      .selected-date-range {
+        background-color: #319177;
+      }
+
+      .another-calendar-days {
+        margin: 2px;
+        color: #786546;
+      }
+
+      .birthday-person {
+        font-size: 8px;
+      }
+
+      .div-calendar-row {
+        display: table-row;
+        width: auto;
+        clear: both;
+
+        .div-calendar-col {
+          float: left; /* fix for  buggy browsers */
+          width: 8%;
+          padding: 30px;
+          text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+@media screen and (max-width: 768px)  and (min-width: 469px){
+  .content {
+    margin-left: 0px;
+    width: 100%;
+    .header {
+      .middle {
+        width: 82%;
+      }
+      .previous {
+        color: #ffffff;
+      }
+      .next {
+        color: #ffffff;
+      }
+    }
+    .div-calendar {
+      font-size: 20px;
+      width: 100%;
+      .week {
+        padding: 25px;
+      }
+      .div-calendar-row {
+        .div-calendar-col {
+          width: 5%;
+          }
+        }
+      .calendar-body {
+        .div-calendar-row {
+          .div-calendar-col {
+            width: 5%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 468px) and (min-width: 376px) {
+  .content {
+    width: 100%;
+    margin-left: 0px;
+    .header {
+      .middle {
+        width: 83%;
+        .month-select {
+          font-size: 15px;
+        }
+        .year-select {
+          font-size: 15px;
+        }
+      }
+      .previous {
+        color: #ffffff;
+        font-size: 15px;
+      }
+      .next {
+        color: #ffffff;
+        font-size: 15px;
+      }
+    }
+    .div-calendar {
+      font-size: 10px;
+      width: 100%;
+      .week {
+        padding: 0px;
+      }
+      .div-calendar-row {
+        .div-calendar-col {
+          width: 6%;
+          padding: 0px 13px;
+          }
+        }
+      .calendar-body {
+        .div-calendar-row {
+          .div-calendar-col {
+            width: 6%;
+            padding: 13px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) and (min-width: 321px) {
+  .content {
+    width: 100%;
+    margin-left: 0px;
+    .header {
+      .middle {
+        width: 83%;
+        .month-select {
+          font-size: 15px;
+        }
+        .year-select {
+          font-size: 15px;
+        }
+      }
+      .previous {
+        color: #ffffff;
+        font-size: 15px;
+      }
+      .next {
+        color: #ffffff;
+        font-size: 15px;
+      }
+    }
+    .div-calendar {
+      font-size: 10px;
+      width: 100%;
+      .week {
+        padding: 0px;
+      }
+      .div-calendar-row {
+        .div-calendar-col {
+          width: 5%;
+          padding: 0px 13px;
+          }
+        }
+      .calendar-body {
+        .div-calendar-row {
+          .div-calendar-col {
+            width: 5%;
+            padding: 13px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .content {
+    width: 100%;
+    margin-left: 0px;
+    .header {
+      .middle {
+        width: 80%;
+        .month-select {
+          font-size: 15px;
+        }
+        .year-select {
+          font-size: 15px;
+        }
+      }
+      .previous {
+        color: #ffffff;
+        font-size: 15px;
+      }
+      .next {
+        color: #ffffff;
+        font-size: 15px;
+      }
+    }
+    .div-calendar {
+      font-size: 10px;
+      width: 100%;
+      .week {
+        padding: 0px;
+      }
+      .div-calendar-row {
+        .div-calendar-col {
+          width: 3%;
+          padding: 0px 13px;
+          }
+        }
+      .calendar-body {
+        .div-calendar-row {
+          .div-calendar-col {
+            width: 3%;
+            padding: 13px;
+          }
+        }
+      }
+    }
+  }
+}
