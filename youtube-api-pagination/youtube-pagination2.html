@@ -1,0 +1,31 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="exp.css">
+</head>
+<body class="back">
+  <div>
+    <div>
+    <div class="header row">
+      <div class="col-sm-4 col-xs-4 image">
+        <img class="logo img-responsive" src="youtube.png">
+      </div>
+      <div class="col-sm-8 col-xs-4 form-inline">
+          <input type="text" class="form-control" placeholder="Search" id="query" width="600px">
+          <button id="button" class="btn btn-primary mb-2" onclick="search(0)">Search</button>
+      </div>
+    </div>
+    </div>
+      <div class="container">
+       <div class="row" id="content">
+       </div>
+      </div>
+      <div class="container" id="div-paginated">
+      </div>
+  </div>
+
+<script src="youtube-pagination2.js"></script>
+</body>
+</html>
