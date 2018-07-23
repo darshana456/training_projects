@@ -1,0 +1,52 @@
+<html>
+<head>
+  <title>Title</title>
+  <link rel="stylesheet" type="text/css" href="actual-assignment1.css">
+</head>
+<body>
+  <div id="containerId">
+    <div id="header">
+      <div id="button-previous">
+        <button onclick="calendar(false, true)"><img src="arrow1.jpg" width="40px"></button>
+      </div>
+      <div id="middle">
+        <span id="display-date">
+          <span>
+            <select id="month-select" onchange="calendar(false, false, true)">
+
+            </select>
+          </span>
+          <span>
+            <select id="year-select" onchange="calendar(false, false, true)">
+              <option id="year" value="2018">
+            </select>
+          </span>
+        </span>
+      </div>
+      <div id="button-next">
+        <button onclick="calendar(true, false)"><img src="arrow.jpg" width="40px"></button>
+      </div>
+    </div>
+    <div>
+    <table id="table">
+      <thead id="week-row">
+      <tr id="week-row">
+        <th id="week">Sun</th>
+        <th id="week">Mon</th>
+        <th id="week">Tue</th>
+        <th id="week">Wed</th>
+        <th id="week">Thu</th>
+        <th id="week">Fri</th>
+        <th id="week">Sat</th>
+      </tr>
+      </thead>
+      <tbody id="tb">
+      </tbody>
+
+    </table>
+    </div>
+
+  </div>
+  <script src="actual-assignment1.js"></script>
+</body>
+</html>

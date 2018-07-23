@@ -1,0 +1,100 @@
+#birthday-person {
+  font-size: 15px;
+}
+#button-previous {
+  float: left;
+  height: 30px;
+  width: 26%;
+}
+#button-next {
+  float: right;
+  width: 8%;
+  height: 30px;
+}
+#containerId{
+  border: 2px solid;
+  border-color: #92a8d1;
+  margin-left: 40px;
+  width: 66%;
+}
+#header {
+  margin: 20px;
+  width: 95%;
+}
+#middle {
+  float: left;
+  padding-left: 40px;
+  text-align: center;
+  width: 40%;
+}
+#month-select {
+  font-size: 20px;
+  background-color: white;
+}
+#year-select {
+  font-size: 20px;
+  background-color: white;
+}
+#table {
+  border: 2px solid;
+  border-radius: 2px;
+  border-color: #92a8d1;
+}
+#week {
+  border: 2px solid black;
+  border-radius: 2px;
+  border-color: #92a8d1;
+  color: white;
+  font-size: 30px;
+  padding: 30px;
+  width: 60px;
+}
+#week-row {
+  background-color: #4B0082;
+  width: 60px;
+}
+.week-table {
+  border: 2px solid black;
+  border-radius: 2px;
+  border-color: #92a8d1;
+  font-size: 30px;
+  padding: 30px;
+  text-align: right;
+}
+.another-calendar-days {
+  border: 2px solid black;
+  border-radius: 2px;
+  border-color: #92a8d1;
+  font-size: 30px;
+  padding: 30px;
+  text-align: right;
+  color: #EBEBE4;
+}
+.week-table-current {
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+  border-radius: 2px;
+  border-color: #92a8d1;
+  font-size: 30px;
+  padding: 30px;
+  text-align: right;
+}
+.birthday-date {
+  background-color: #456789;
+  color: black;
+  border: 2px solid black;
+  border-radius: 2px;
+  font-size: 30px;
+  padding: 30px;
+  text-align:right;
+}
+.week-event {
+  background-color: red;
+  color: white;
+  border: 2px solid black;
+  border-radius: 2px;
+  font-size: 30px;
+  padding: 30px;
+  text-align: right;
+}
